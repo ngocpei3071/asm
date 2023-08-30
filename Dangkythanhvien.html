@@ -1,0 +1,86 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+        <link href="style.css" rel="stylesheet" />
+        <title>Chi tiết sản phẩm</title>
+    </head>
+    <body>
+        <div class="header">
+           <h1>QUẦN ÁO LOCAL BRAND</h1>
+          <p>Easy wear - Easy care - Easy wear</p>
+      </div>
+      <div class="topnav">
+          <a href="index.html">Trang chủ</a>
+          <a href="#">ÁO</a>
+          <a href="#">QUẦN</a>
+          <a href="#">ĐỒ HỌA TIẾT</a>
+          <a href="#" style="float: right">Đăng nhập</a>
+      </div>
+  
+        <div class="header" >
+            <h2>ĐĂNG KÝ THÀNH VIÊN</h2>
+        </div>
+  <script src="JavaScript/Dangkythanhvien.js"></script>
+</head>
+<body>
+
+  <form onsubmit="return validateForm()">
+    
+
+    <label for="name">Tên đăng ký</label><br>
+    <input type="text" id="name" name="studentId"><br>
+
+    <label for="name">Email</label><br>
+    <input type="text" id="name" name="name"><br>
+
+    <label for="email">Mật khẩu</label><br>
+    <input type="text" id="email" name="email"><br>
+
+    
+    
+        <div class="form-row">
+          <label for="gender">Giới tính:</label>
+          <input type="radio" id="male" name="gender" value="male">
+    <label for="male">Nam</label>
+    <input type="radio" id="female" name="gender" value="female">
+    <label for="female">Nữ</label><br>
+    <div id="genderError" class="error"></div>
+        </div>
+        
+        <div class="form-row">
+                <input type="checkbox" id="reading" name="preferences" value="reading">
+    <label for="reading">Đọc sách</label>
+    <input type="checkbox" id="traveling" name="preferences" value="traveling">
+    <label for="traveling">Du lịch</label>
+    <input type="checkbox" id="sports" name="preferences" value="sports">
+    <label for="sports">Âm nhạc</label>
+    <input type="checkbox" id="sports" name="preferences" value="food">
+    <label for="sports">Ẩm thực</label>
+    <input type="checkbox" id="sports" name="preferences" value="other">
+    <label for="sports">Khác</label>
+    <div id="preferencesError" class="error"></div>
+        </div>
+        
+        <div class="form-row">
+          <label for="nationality">Quốc tịch:</label>
+          <select id="nationality" name="nationality">
+            <option value=""></option>
+            <option value="vn">Việt Nam</option>
+            <option value="us">Mỹ</option>
+            <option value="uk">Anh</option>
+            
+          </select><br> 
+        </div>
+        
+
+    <label for="note">Ghi chú:</label><br>
+    <textarea id="note" name="note" rows="4" ></textarea><br>
+
+    <input type="submit" value="Đăng ký">
+  </form>
+</body>
+</html>

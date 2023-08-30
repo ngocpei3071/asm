@@ -1,0 +1,100 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+        <link  href="style.css" rel="stylesheet" />
+        <title>Chi tiết sản phẩm</title>
+    </head>
+    <body>
+        <div class="header">
+                       <h1>QUẦN ÁO LOCAL BRAND</h1>
+            <p>Easy wear - Easy care - Easy wear</p>
+        </div>
+        <div class="topnav">
+            <a href="index.html">Trang chủ</a>
+            <a href="#">ÁO</a>
+            <a href="#">QUẦN</a>
+            <a href="#">ĐỒ HỌA TIẾT</a>
+            <a href="#" style="float: right">Đăng nhập / Đăng ký</a>
+        </div>
+  
+        <div class="header" >
+            <h2>BÁN HÀNG</h2>
+        </div>
+        <script src="JavaScript/Banhang.js"></script>
+      </head>
+
+
+<body>
+  <div class="centered">
+    <select id="price" onchange="filterByPrice()">
+        <option value="9999">Mức giá</option>
+        <option value="2700">Dưới $2700</option>
+        <option value="1700">Dưới $1700</option>
+        <option value="1500">Dưới $1500</option>
+        <option value="1200">Dưới $1200</option>
+    </select>
+  </div>
+    <table>
+        <thead>
+            <tr>
+                <th><input type="checkbox"></th>
+                <th>Hàng hóa</th>
+                <th>Đơn giá</th>
+                <th>Số lượng</th>
+                <th>Thành tiền</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    <input type="checkbox" onchange="toggleQuantityInput(this)">
+                </td>
+                <td>Áo thun local brand</td>
+                <td>$2700</td>
+                <td>
+                    <input type="text" disabled onchange="calculateTotal(this.parentNode.parentNode.getElementsByTagName('td')[2], this, this.parentNode.parentNode.getElementsByTagName('td')[4])">
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="checkbox" onchange="toggleQuantityInput(this)">
+                </td>
+                <td>Áo thun nữ Basic</td>
+                <td>$1500</td>
+                <td>
+                    <input type="text" disabled onchange="calculateTotal(this.parentNode.parentNode.getElementsByTagName('td')[2], this, this.parentNode.parentNode.getElementsByTagName('td')[4])">
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="checkbox" onchange="toggleQuantityInput(this)">
+                </td>
+                <td>Quần jean ống rộng</td>
+                <td>$1200</td>
+                <td>
+                    <input type="text" disabled onchange="calculateTotal(this.parentNode.parentNode.getElementsByTagName('td')[2], this, this.parentNode.parentNode.getElementsByTagName('td')[4])">
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="checkbox" onchange="toggleQuantityInput(this)">
+                </td>
+                <td>Áo thun nữ họa tiết</td>
+                <td>$1700</td>
+                <td>
+                    <input type="text" disabled onchange="calculateTotal(this.parentNode.parentNode.getElementsByTagName('td')[2], this, this.parentNode.parentNode.getElementsByTagName('td')[4])">
+                </td>
+                <td></td>
+            </tr>
+           
+     </table>
+    
+</body>
+</html>

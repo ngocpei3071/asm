@@ -1,0 +1,255 @@
+* {
+    box-sizing: border-box;
+    }
+    
+    body {
+    font-family: Arial;
+    padding: 10px;
+    background: #0c0c0c;
+    }
+    
+    /* Header/Blog Title */
+    .header {
+    padding: 10px;
+    text-align: center;
+    background: rgb(19, 18, 18);
+    color: #f6678a;
+    }
+    
+    .header h1 {
+    font-size: 40px;
+    }
+    
+    .header p {
+    font-size: 20px;
+    }
+    
+    /* Style the top navigation bar */
+    .topnav {
+    
+    overflow: hidden;
+    background-color: #f999bb;
+    }
+    
+    /* Định dạng link điều hướng */
+    .topnav a {
+    float: left;
+    display: block;
+    color: #050505;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    }
+    
+    /* Thay đổi màu liên kết khi di chuột qua */
+    .topnav a:hover {
+    background-color: #fb8cb7;
+    color: rgb(4, 4, 4);
+    }
+    
+    /* Tạo hai cột không bằng nhau, float cạnh nhau */
+    /* Cột trái */
+    .leftcolumn {
+    float: left;
+    width: 75%;
+    }
+    
+    /* Cột phải */
+    .rightcolumn {
+    
+    float: left;
+    width: 25%;
+    background-color: #0a0a0a;
+    padding-left: 20px;
+    }
+    
+    /* Hình ảnh bài viết*/
+    .images {
+    width: 100%;
+    height: 200px;
+    }
+    .box h2 {
+        background-color: rgb(237, 164, 189);
+        width: 260px;
+        height: 50px;
+        padding: 10px; 
+        margin: 20px 0px;
+        text-align: center;
+        display: inline-block;
+        }
+    
+    /* Thêm định dạng thẻ nội dung thêm */
+    .card {
+    background-color: rgb(241, 162, 191);
+    padding: 20px;
+    margin-top: 20px;
+    text-align: center;
+    }
+    
+    
+    /* Thêm định dạng thẻ cho bài viết */
+    .card-news {
+    width: 28%;
+    background-color: rgb(244, 170, 196);
+    padding: 20px;
+    margin: 15px;
+    float: left;
+    min-height: 600px;
+    }
+    
+    /* Clear float khác sau các cột */
+    .row:after {
+    content: "";
+    display: table;
+    clear: both;
+    }
+    
+    /* Footer */
+    .footer {
+    padding: 10px;
+    text-align: center;
+    background: rgb(248, 70, 135);
+    margin-top: 10px;
+    }
+    
+    /* Bố cục linh hoạt: các cột xếp chồng lên nhau thay vì cạnh nhau khi màn hình
+    có chiều rộng dưới 700px */
+    @media screen and (max-width: 700px) {
+    .leftcolumn,
+    .rightcolumn {
+    width: 100%;
+    padding: 0;
+    }
+    }
+    
+    /* Bố cục linh hoạt: Thanh menu điều hướng xếp chồng lên nhau thay vì cạnh nhau
+    khi màn hình có chiều rộng dưới 300px */
+    @media screen and (max-width: 300px) {
+    .topnav a {
+    
+    float: none;
+    width: 100%;
+    }
+    }
+    /* bo suu tap */
+    .h2 {
+        color: #f6678a;
+    }
+    /* CSS để tạo slideshow */
+ .slideshow-container {
+    max-width: 500px;
+    position: relative;
+    margin: auto;
+  }
+  
+  .slideshow-container img {
+    width: 70%;
+    margin: 0 auto;
+    display: none;
+  } 
+  
+  
+  /* CSS để tạo các nút điều hướng */
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    transform: translateY(-50%);
+  }
+  
+  .prev {
+    left: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  #imageCounter {
+    color: pink;
+  }
+
+
+
+  
+  /* form đăng ký */
+  .error {
+    background-color: yellow;
+  }
+/* Định dạng chung cho các nhãn và input */
+label, input, select, textarea {
+  display: block;
+  margin-bottom: 10px;
+}
+
+/* Định dạng cho nút submit */
+input[type="submit"] {
+  padding: 10px 20px;
+  background-color: #e71d3f;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #070707;
+}
+
+/* Định dạng cho form đăng ký */
+form {
+  background-color: pink;
+  width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Định dạng cho hàng chứa giới tính, sở thích và quốc tịch */
+.form-row {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+/* Định dạng cho label trong hàng */
+.form-row label {
+  flex-basis: 33.33%;
+  margin-right: 10px;
+}
+
+
+/* Bán hàng */
+
+th,
+td {
+    border: 1px solid #ccc;
+    padding: 5px 8px;
+    background-color: palevioletred;
+    text-align: center;
+    vertical-align: middle;
+}
+table {
+  width: 80%;
+  table-layout: fixed;
+  margin: auto;
+
+
+}
+
+.centered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
